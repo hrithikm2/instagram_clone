@@ -12,7 +12,7 @@ Clone your forked repo and move inside it:
 git clone https://github.com/<your-github-username>/<repo-name>.git && cd <repo-name>
 
 Checkout to a new branch to work on an issue:
-git checkout -b my-amazing-feature
+```git checkout -b my-amazing-feature```
 
 Load Android Studio and select 'Check out Project' from Version Control.
 
