@@ -3,7 +3,7 @@
 An app intended to clone the functionality and UI of popular social media application Instagram. This app will be made using the latest Flutter sdk and a popular state management tool called GetX.
 
 
-##Getting Started
+## Getting Started
 
 Fork it.
 
