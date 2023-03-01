@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:instagram_clone/app/routes/app_pages.dart';
+import 'package:instagram_clone/components/login_button.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import '../../../../components/dont_have_account.dart';
@@ -36,16 +38,9 @@ class WelcomeView extends GetView<WelcomeController> {
                   .bold
                   .make(),
               10.heightBox,
-              MaterialButton(
-                height: 44,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5)),
-                minWidth: context.safePercentWidth * 80,
-                color: const Color(0xff3797EF),
-                onPressed: () {
-                  controller.onLoginTapped();
-                },
-                child: "Log in".text.white.make(),
+              LoginButton(
+                onPressed: () => Get.toNamed(Routes.login),
+                isEnabled: true,
               ),
               16.heightBox,
               TextButton(

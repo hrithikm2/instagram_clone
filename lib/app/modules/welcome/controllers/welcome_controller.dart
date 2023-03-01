@@ -1,18 +1,6 @@
 import 'package:get/get.dart';
-import 'package:instagram_clone/app/modules/login/views/login_view.dart';
+import 'package:instagram_clone/app/routes/app_pages.dart';
 
 class WelcomeController extends GetxController {
-  //TODO: Implement HomeController
-
-  final count = 0.obs;
-
-  void increment() => count.value++;
-
-  void onLoginTapped() => Get.to(() => LoginView());
-
-  @override
-  void onInit() {
-    print(Get.isDarkMode);
-    super.onInit();
-  }
+  void onLoginTapped() => Get.toNamed(Routes.login);
 }

@@ -17,6 +17,11 @@ void main() {
       smartManagement: SmartManagement.full,
       getPages: AppPages.routes,
       themeMode: ThemeMode.system,
+      theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
+          inputDecorationTheme: const InputDecorationTheme(
+            fillColor: Color.fromRGBO(0, 0, 0, 0.8),
+          )),
     ),
   );
 }

@@ -1,22 +1,17 @@
-// ignore_for_file: unnecessary_overrides
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class LoginController extends GetxController {
-  //TODO: Implement LoginController
-  TextEditingController usernameController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  late TextEditingController usernameController;
+  late TextEditingController passwordController;
+  final isEnabled = false.obs;
+  RxStatus x = RxStatus.loading();
 
-  final count = 0.obs;
   @override
   void onInit() {
+    usernameController = TextEditingController();
+    passwordController = TextEditingController();
     super.onInit();
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
   }
 
   @override
@@ -26,5 +21,5 @@ class LoginController extends GetxController {
     passwordController.dispose();
   }
 
-  void increment() => count.value++;
+  void validateForm() {}
 }

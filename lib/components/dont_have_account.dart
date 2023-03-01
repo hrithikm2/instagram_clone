@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
 
+import '../app/routes/app_pages.dart';
+
 class DontHaveAccount extends StatelessWidget {
   const DontHaveAccount({Key? key}) : super(key: key);
 
@@ -20,7 +22,7 @@ class DontHaveAccount extends StatelessWidget {
           " Sign up."
               .textSpan
               .tap(() {
-                Get.snackbar("Sign up karwa re", "message");
+                Get.offAllNamed(Routes.register);
               })
               .semiBold
               .color(Get.isDarkMode ? Colors.white : Colors.black)
