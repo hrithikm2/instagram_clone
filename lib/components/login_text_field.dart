@@ -15,9 +15,10 @@ class LoginTextField extends StatelessWidget {
         controller: controller,
         textAlignVertical: TextAlignVertical.center,
         decoration: InputDecoration(
-          fillColor: const Color.fromRGBO(0, 0, 0, 0.8),
+          fillColor: const Color.fromRGBO(0, 0, 0, 0.1),
           hintText: hintText,
-          focusColor: const Color.fromRGBO(0, 0, 0, 0.8),
+          focusColor: const Color.fromRGBO(0, 0, 0, 0.1),
+          filled: true,
           hintStyle:
               TextStyle(fontSize: 14, color: Colors.black.withOpacity(0.2)),
           border: OutlineInputBorder(

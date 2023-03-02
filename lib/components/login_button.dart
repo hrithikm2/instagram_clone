@@ -16,7 +16,7 @@ class LoginButton extends StatelessWidget {
           ? const Color(0xff3797EF)
           : const Color(0xff3797EF).withOpacity(0.6),
       onPressed: onPressed,
-      child: "Log in".text.white.make(),
+      child: "Log in".text.white.bold.make(),
     );
   }
 }

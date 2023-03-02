@@ -45,7 +45,7 @@ class WelcomeView extends GetView<WelcomeController> {
               16.heightBox,
               TextButton(
                 onPressed: () {},
-                child: "Switch accounts".text.make(),
+                child: "Switch accounts".text.semiBold.make(),
               ),
             ],
           ),

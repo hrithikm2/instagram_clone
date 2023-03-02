@@ -13,14 +13,15 @@ void main() {
       darkTheme: ThemeData(scaffoldBackgroundColor: Colors.black),
       title: "Application",
       initialBinding: WelcomeBinding(),
-      initialRoute: AppPages.INITIAL,
+      initialRoute: AppPages.initial,
       smartManagement: SmartManagement.full,
       getPages: AppPages.routes,
       themeMode: ThemeMode.system,
       theme: ThemeData(
+          fontFamily: "sf-pro",
           scaffoldBackgroundColor: Colors.white,
           inputDecorationTheme: const InputDecorationTheme(
-            fillColor: Color.fromRGBO(0, 0, 0, 0.8),
+            fillColor: Color.fromRGBO(0, 0, 0, 0.1),
           )),
     ),
   );
