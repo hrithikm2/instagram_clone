@@ -6,6 +6,7 @@ import 'package:instagram_clone/app/modules/welcome/bindings/welcome_binding.dar
 import 'app/routes/app_pages.dart';
 
 void main() {
+  //TODO: MIGRATE TO BLOC
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
     GetMaterialApp(
