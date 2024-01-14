@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "263937942079",
+    "project_id": "instagram-clone-c97df",
+    "storage_bucket": "instagram-clone-c97df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263937942079:android:c2db4705c81d13dae7ce8a",
+        "android_client_info": {
+          "package_name": "com.hmclones.instagramclone.instagram_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263937942079-ln04cjfef8unbifg0jp8jc70grv0fpgc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl6xXZItsOLUyVfatsyJzjNhgr1IGsnl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263937942079-ln04cjfef8unbifg0jp8jc70grv0fpgc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "263937942079-vr67fsjf8oikuk6le8e4qomlh0kc3e9p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hmclones.instagramclone.instagramClone"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263937942079:android:2f43d011c0093f4fe7ce8a",
+        "android_client_info": {
+          "package_name": "com.inhrithikmishra.instagramclone.instagram_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263937942079-ln04cjfef8unbifg0jp8jc70grv0fpgc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl6xXZItsOLUyVfatsyJzjNhgr1IGsnl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263937942079-ln04cjfef8unbifg0jp8jc70grv0fpgc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "263937942079-vr67fsjf8oikuk6le8e4qomlh0kc3e9p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hmclones.instagramclone.instagramClone"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

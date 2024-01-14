@@ -31,7 +31,7 @@ class InstagramIcons {
       IconData(0xe805, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData search =
       IconData(0xe806, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData add_post =
+  static const IconData addPost =
       IconData(0xe807, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData shape_1 =
       IconData(0xe808, fontFamily: _kFontFam, fontPackage: _kFontPkg);

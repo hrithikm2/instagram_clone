@@ -7,7 +7,6 @@ import '../../../../components/instagram_logo.dart';
 import '../../../../components/login_button.dart';
 import '../../../../components/login_form.dart';
 import '../../../../constants/app_constants.dart';
-import '../../../routes/app_pages.dart';
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
@@ -18,13 +17,14 @@ class LoginView extends GetView<LoginController> {
     return GestureDetector(
       onTap: () => Get.focusScope?.unfocus(),
       child: Scaffold(
-          appBar: AppBar(
-            leading: const InstagramBackButton(),
-            elevation: 0,
-            backgroundColor: Colors.transparent,
-          ),
-          body: Center(
-            child: Column(
+        appBar: AppBar(
+          leading: const InstagramBackButton(),
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+        ),
+        body: Center(
+          child: Obx(
+            () => Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -33,24 +33,32 @@ class LoginView extends GetView<LoginController> {
                   LoginForm(
                     usernameController: controller.usernameController,
                     passwordController: controller.passwordController,
+                    obscureText: controller.obscureText.value,
                   ),
-                  mediumVerticalSpacing,
+                  if (controller.errorMsg.isNotEmpty) ...[
+                    smallVerticalSpacing,
+                    controller.errorMsg.value.text.red500.make(),
+                    smallVerticalSpacing,
+                  ],
                   Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
                       onPressed: () {},
+                      style: const ButtonStyle(
+                        splashFactory: NoSplash.splashFactory,
+                      ),
                       child: "Forgot password?".text.make(),
                     ),
                   ),
                   mediumVerticalSpacing,
-                  Obx(
-                    () => LoginButton(
-                      onPressed: () => Get.toNamed(Routes.login),
-                      isEnabled: controller.isEnabled.value,
-                    ),
+                  LoginButton(
+                    onPressed: () => controller.handleLoginTap(),
+                    isEnabled: controller.isEnabled.value,
                   ),
                 ]).p16(),
-          )),
+          ),
+        ),
+      ),
     );
   }
 }

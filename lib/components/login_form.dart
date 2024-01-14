@@ -8,8 +8,10 @@ class LoginForm extends StatelessWidget {
     super.key,
     required this.usernameController,
     required this.passwordController,
+    required this.obscureText,
   });
   final TextEditingController usernameController, passwordController;
+  final bool obscureText;
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +26,7 @@ class LoginForm extends StatelessWidget {
           LoginTextField(
             controller: passwordController,
             hintText: "Password",
+            obscureText: obscureText,
           ),
         ],
       ),
